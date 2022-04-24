@@ -1,0 +1,7 @@
+paste -d' ' \
+  <(./char-freq $1) \
+  <(./char-freq-at 1 $1) \
+  <(./char-freq-at 2 $1) \
+  <(./char-freq-at 3 $1) \
+  <(./char-freq-at 4 $1) \
+  <(./char-freq-at 5 $1)

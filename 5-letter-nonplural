@@ -1,0 +1,1 @@
+grep -E '^[a-z]{5}$' "$@" | grep -vE '[^aeiuo]s$' | sed 's/[éê]/e/g;s/ó/o/g' | tr 'A-Z' 'a-z'

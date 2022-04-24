@@ -1,0 +1,7 @@
+#/usr/bin/env bash
+DICT=$(mktemp)
+./5-letter-nonplural "$1" > $DICT
+(
+  ./freq-table $DICT
+  cat $DICT
+) | ./score.awk

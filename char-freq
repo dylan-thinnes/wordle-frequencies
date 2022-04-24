@@ -1,0 +1,1 @@
+grep -oE '.' "$1" | sort | uniq -c | sort -gr
